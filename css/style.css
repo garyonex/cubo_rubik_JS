@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: rgba(0, 0, 0, 0.575);
+  background-image: url(../img/thumb-1920-1050187.jpg); }
+
+.fondo {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  display: block; }
+
+.fondo-caja img {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+h1 {
+  background-color: rgba(0, 0, 0, 0.61);
+  color: azure;
+  font-size: 80px;
+  text-align: center;
+  margin: 5%;
+  padding: 20px; }
+
+p {
+  background-color: rgba(27, 24, 199, 0.527);
+  font-size: 50px;
+  color: azure;
+  text-align: center;
+  margin: 1em;
+  padding: 1em; }
+
+footer {
+  position: sticky;
+  top: 0;
+  bottom: -10;
+  color: #f1f1f1;
+  font-size: 30px;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); }
+
+footer a:hover {
+  color: aqua;
+  text-align: none; }
+
+button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  font-size: 30px;
+  border: 1px solid rgba(4, 0, 255, 0.2); }
+
+button:hover {
+  background-color: rgba(252, 247, 247, 0.713); }
+
+/* relacionado con las tarjetas para los productos*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  background-color: #f0f0f0; }
+
+body {
+  color: #999999;
+  font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on; }
+
+img {
+  height: auto;
+  max-width: 100%;
+ }
+
+.btn {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #696969;
+  padding: 0.5rem;
+  text-transform: uppercase; }
+
+.btn:hover {
+  background-color: rgba(208, 195, 195, 0.487); }
+
+.btn--block {
+  display: block;
+  width: 100%; }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.cards__item {
+  display: flex;
+  padding: 1rem; }
+  @media (min-width: 40rem) {
+    .cards__item {
+      width: 50%; } }
+  @media (min-width: 56rem) {
+    .cards__item {
+      width: 33.3333%; } }
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+  .card:hover .card__image {
+    filter: contrast(100%); }
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem; }
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); }
+  .card__image::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; }
+  @media (min-width: 40rem) {
+    .card__image::before {
+      padding-top: 66.6%; } }
+
+.cards__item img {
+  width: 340px;
+  height: 320px; }
+
+.card__image--one {
+  background-image: url(../img/moyu_3x3.jpg); }
+
+.card__image--two {
+  background-image: url(../img/qiyi_3x3.jpg); }
+
+.card__image--three {
+  background-image: url(../img/moyu_2x2.jpg); }
+
+.card__title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem; }
+
+.registro {
+  font-size: 20px; }
+  .registro h2 {
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.61); }
+  .registro h3 {
+    color: azure; }
+
+h4 {
+  font-size: 20px;
+  align-content: center;
+  text-align: center;
+  background-color: rgba(174, 2, 253, 0.22);
+  color: azure; }
+
+#contenedorPrimario {
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 400px; }
+
+.form_dom {
+  color: azure;
+  font-size: 10px;
+  background-color: rgba(174, 2, 253, 0.22);
+  align-content: center; }
+
+#formulario label {
+  font-size: 2em; }
+
+#formulario input:focus {
+  background-color: rgba(177, 152, 218, 0.597);
+  color: rgba(248, 241, 241, 0.885); }
+
+#formulario input {
+  font-size: 2em;
+  align-items: center;
+  padding: 9px;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.carrito_compra {
+  font-size: 10px;
+  background-color: rgba(27, 24, 199, 0.527); }
+
+.carrito_item {
+  font-size: 10px;
+  background-color: rgba(27, 24, 199, 0.527); }
